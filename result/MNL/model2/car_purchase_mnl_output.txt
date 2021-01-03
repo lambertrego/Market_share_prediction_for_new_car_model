@@ -1,0 +1,95 @@
+Model run using Apollo for R, version 0.1.0 
+www.ApolloChoiceModelling.com
+
+Model name                       : car_purchase_mnl
+Model description                : Standard logit model on Train's car purchase data
+Model run at                     : 2021-01-02 20:51:13
+Estimation method                : bfgs
+Model diagnosis                  : successful convergence 
+Number of individuals            : 4654
+Number of observations           : 4654
+
+Number of cores used             :  7 
+Model without mixing
+
+LL(start)                        : -8275.768
+LL(0)                            : -8338.849
+LL(final)                        : -8061.298
+Rho-square (0)                   :  0.0333 
+Adj.Rho-square (0)               :  0.0329 
+AIC                              :  16128.6 
+BIC                              :  16147.93 
+Estimated parameters             :  3
+Time taken (hh:mm:ss)            :  00:00:16.22 
+Iterations                       :  9 
+Min abs eigenvalue of hessian    :  1393.735 
+
+Estimates:
+            Estimate Std.err. t.ratio(0) Rob.std.err. Rob.t.ratio(0)
+priceLogInc  -0.1935   0.0268      -7.23       0.0267          -7.26
+b_cost       -0.0728   0.0073      -9.93       0.0075          -9.68
+b_range       0.0037   0.0002      19.77       0.0002          19.82
+
+Overview of choices for model component "MNL"
+                                    car1    car2   car3   car4    car5    car6
+Times available                  4654.00 4654.00 4654.0 4654.0 4654.00 4654.00
+Times chosen                      887.00  269.00 1345.0  349.0 1499.00  305.00
+Percentage chosen overall          19.06    5.78   28.9    7.5   32.21    6.55
+Percentage chosen when available   19.06    5.78   28.9    7.5   32.21    6.55
+
+WARNING: Availability not provided to 'apollo_mnl' (or some elements are NA).
+         Full availability assumed.
+
+
+Classical covariance matrix:
+            priceLogInc      b_cost     b_range
+priceLogInc       7e-04       0e+00           0
+b_cost            0e+00       1e-04           0
+b_range           0e+00       0e+00           0
+
+Robust covariance matrix:
+            priceLogInc      b_cost     b_range
+priceLogInc       7e-04       0e+00           0
+b_cost            0e+00       1e-04           0
+b_range           0e+00       0e+00           0
+
+Classical correlation matrix:
+            priceLogInc      b_cost     b_range
+priceLogInc      1.0000      0.0250      0.0431
+b_cost           0.0250      1.0000     -0.1661
+b_range          0.0431     -0.1661      1.0000
+
+Robust correlation matrix:
+            priceLogInc      b_cost     b_range
+priceLogInc      1.0000      0.0404      0.0313
+b_cost           0.0404      1.0000     -0.1851
+b_range          0.0313     -0.1851      1.0000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+ 2041          0.05005051
+ 3344          0.05076814
+ 4418          0.05266497
+ 2109          0.05465107
+ 1292          0.05501537
+ 1405          0.05501537
+  821          0.05510425
+ 1878          0.05521651
+ 2785          0.05568918
+ 4541          0.05573761
+ 1024          0.05583864
+ 3720          0.05764084
+ 1986          0.05768966
+  489          0.05770446
+ 3137          0.05793200
+   36          0.05851303
+ 1748          0.05851303
+ 2773          0.05941648
+ 3034          0.05975741
+ 3654          0.06093863
+
+Changes in parameter estimates from starting values:
+            Initial Estimate Difference
+priceLogInc -0.2447  -0.1935     0.0512
+b_cost      -0.0552  -0.0728    -0.0176
+b_range      0.0000   0.0037     0.0037

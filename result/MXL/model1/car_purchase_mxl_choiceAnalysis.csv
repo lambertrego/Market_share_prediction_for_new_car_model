@@ -1,0 +1,7 @@
+"","Mean for college if chosen","Mean for college if not chosen","t-test for difference","Mean for hsg2 if chosen","Mean for hsg2 if not chosen","t-test for difference","Mean for coml5 if chosen","Mean for coml5 if not chosen","t-test for difference"
+"car1",0.7858,0.764,-1.41,0.2074,0.2254,1.18,0.3641,0.3563,-0.44
+"car2",0.7621,0.7685,0.24,0.2974,0.2173,-2.8,0.2937,0.3617,2.37
+"car3",0.7881,0.76,-2.09,0.1933,0.2336,3.09,0.339,0.3654,1.71
+"car4",0.7564,0.7691,0.53,0.3209,0.2139,-4.15,0.3238,0.3605,1.41
+"car5",0.7565,0.7737,1.29,0.2015,0.2317,2.36,0.3889,0.3429,-3.03
+"car6",0.7049,0.7726,2.51,0.3115,0.2157,-3.51,0.3639,0.3573,-0.23

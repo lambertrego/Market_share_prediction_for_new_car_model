@@ -1,0 +1,183 @@
+Model run using Apollo for R, version 0.1.0 
+www.ApolloChoiceModelling.com
+
+Model name                       : car_purchase_mxl
+Model description                : Mixed logit model on Train's car purchase data
+Model run at                     : 2021-01-02 22:57:41
+Estimation method                : bfgs
+Model diagnosis                  : successful convergence 
+Number of individuals            : 4654
+Number of observations           : 4654
+
+Number of cores used             :  7 
+Number of intra-person draws     : 1000 (halton)
+
+LL(start)                        : -7937.849
+LL(0)                            : -8338.849
+LL(final)                        : -7850.722
+Rho-square (0)                   :  0.0585 
+Adj.Rho-square (0)               :  0.0573 
+AIC                              :  15721.44 
+BIC                              :  15785.9 
+Estimated parameters             :  10
+Time taken (hh:mm:ss)            :  00:27:6.05 
+Iterations                       :  18 
+Min abs eigenvalue of hessian    :  0.455367 
+
+Estimates:
+            Estimate Std.err. t.ratio(0) Rob.std.err. Rob.t.ratio(0)
+priceLogInc  -0.2727   0.0446      -6.12       0.0449          -6.08
+mu_range      0.0056   0.0006       9.35       0.0006           9.22
+sigma_range   0.0070   0.0013       5.28       0.0013           5.31
+mu_size       1.7395   0.4068       4.28       0.3651           4.76
+sigma_size   11.7789   1.4324       8.22       1.2216           9.64
+sigma_ev     -3.6376   0.5904      -6.16       0.6273          -5.80
+sigma_large   0.0000       NA         NA           NA             NA
+truck        -0.8522   0.0515     -16.56       0.0512         -16.64
+suv           0.9823   0.1488       6.60       0.1516           6.48
+sportcar      0.8018   0.1561       5.13       0.1532           5.23
+van          -0.5805   0.0499     -11.63       0.0469         -12.38
+
+Overview of choices for model component "MNL"
+                                    car1    car2   car3   car4    car5    car6
+Times available                  4654.00 4654.00 4654.0 4654.0 4654.00 4654.00
+Times chosen                      887.00  269.00 1345.0  349.0 1499.00  305.00
+Percentage chosen overall          19.06    5.78   28.9    7.5   32.21    6.55
+Percentage chosen when available   19.06    5.78   28.9    7.5   32.21    6.55
+
+WARNING: Availability not provided to 'apollo_mnl' (or some elements are NA).
+         Full availability assumed.
+
+
+Classical covariance matrix:
+            priceLogInc    mu_range sigma_range     mu_size  sigma_size    sigma_ev       truck         suv
+priceLogInc      0.0020       0e+00       0e+00     -0.0006     -0.0159      0.0044      0.0001     -0.0001
+mu_range         0.0000       0e+00       0e+00      0.0000      0.0005     -0.0002      0.0000      0.0000
+sigma_range      0.0000       0e+00       0e+00      0.0001      0.0010     -0.0004      0.0000      0.0000
+mu_size         -0.0006       0e+00       1e-04      0.1655      0.0707     -0.0474     -0.0015     -0.0042
+sigma_size      -0.0159       5e-04       1e-03      0.0707      2.0518     -0.5091     -0.0134      0.0124
+sigma_ev         0.0044      -2e-04      -4e-04     -0.0474     -0.5091      0.3486      0.0058     -0.0090
+truck            0.0001       0e+00       0e+00     -0.0015     -0.0134      0.0058      0.0026      0.0008
+suv             -0.0001       0e+00       0e+00     -0.0042      0.0124     -0.0090      0.0008      0.0222
+sportcar        -0.0001       0e+00       0e+00     -0.0045      0.0128     -0.0093      0.0007      0.0150
+van              0.0000       0e+00       0e+00     -0.0011     -0.0065      0.0021      0.0005      0.0001
+               sportcar         van
+priceLogInc     -0.0001      0.0000
+mu_range         0.0000      0.0000
+sigma_range      0.0000      0.0000
+mu_size         -0.0045     -0.0011
+sigma_size       0.0128     -0.0065
+sigma_ev        -0.0093      0.0021
+truck            0.0007      0.0005
+suv              0.0150      0.0001
+sportcar         0.0244      0.0001
+van              0.0001      0.0025
+
+Robust covariance matrix:
+            priceLogInc    mu_range sigma_range     mu_size  sigma_size    sigma_ev       truck         suv
+priceLogInc      0.0020       0e+00       0e+00      0.0008     -0.0115      0.0028      0.0002     -0.0003
+mu_range         0.0000       0e+00       0e+00      0.0000      0.0005     -0.0002      0.0000      0.0000
+sigma_range      0.0000       0e+00       0e+00      0.0000      0.0010     -0.0005      0.0000      0.0000
+mu_size          0.0008       0e+00       0e+00      0.1333     -0.0591     -0.0470     -0.0023     -0.0078
+sigma_size      -0.0115       5e-04       1e-03     -0.0591      1.4924     -0.5477     -0.0229      0.0312
+sigma_ev         0.0028      -2e-04      -5e-04     -0.0470     -0.5477      0.3934      0.0121     -0.0176
+truck            0.0002       0e+00       0e+00     -0.0023     -0.0229      0.0121      0.0026      0.0001
+suv             -0.0003       0e+00       0e+00     -0.0078      0.0312     -0.0176      0.0001      0.0230
+sportcar        -0.0003       0e+00       0e+00     -0.0083      0.0316     -0.0183      0.0002      0.0170
+van              0.0001       0e+00       0e+00     -0.0015     -0.0088      0.0038      0.0005      0.0000
+               sportcar         van
+priceLogInc     -0.0003      0.0001
+mu_range         0.0000      0.0000
+sigma_range      0.0000      0.0000
+mu_size         -0.0083     -0.0015
+sigma_size       0.0316     -0.0088
+sigma_ev        -0.0183      0.0038
+truck            0.0002      0.0005
+suv              0.0170      0.0000
+sportcar         0.0235      0.0000
+van              0.0000      0.0022
+
+Classical correlation matrix:
+            priceLogInc    mu_range sigma_range     mu_size  sigma_size    sigma_ev       truck         suv
+priceLogInc      1.0000     -0.1796     -0.2149     -0.0327     -0.2482      0.1681      0.0514     -0.0199
+mu_range        -0.1796      1.0000      0.8512      0.1041      0.5659     -0.5345     -0.1787      0.0598
+sigma_range     -0.2149      0.8512      1.0000      0.1073      0.5174     -0.5704     -0.1824      0.0675
+mu_size         -0.0327      0.1041      0.1073      1.0000      0.1213     -0.1975     -0.0732     -0.0694
+sigma_size      -0.2482      0.5659      0.5174      0.1213      1.0000     -0.6020     -0.1820      0.0583
+sigma_ev         0.1681     -0.5345     -0.5704     -0.1975     -0.6020      1.0000      0.1920     -0.1027
+truck            0.0514     -0.1787     -0.1824     -0.0732     -0.1820      0.1920      1.0000      0.0983
+suv             -0.0199      0.0598      0.0675     -0.0694      0.0583     -0.1027      0.0983      1.0000
+sportcar        -0.0144      0.0593      0.0609     -0.0704      0.0574     -0.1011      0.0931      0.6466
+van              0.0205     -0.0583     -0.0528     -0.0543     -0.0910      0.0697      0.1883      0.0173
+               sportcar         van
+priceLogInc     -0.0144      0.0205
+mu_range         0.0593     -0.0583
+sigma_range      0.0609     -0.0528
+mu_size         -0.0704     -0.0543
+sigma_size       0.0574     -0.0910
+sigma_ev        -0.1011      0.0697
+truck            0.0931      0.1883
+suv              0.6466      0.0173
+sportcar         1.0000      0.0163
+van              0.0163      1.0000
+
+Robust correlation matrix:
+            priceLogInc    mu_range sigma_range     mu_size  sigma_size    sigma_ev       truck         suv
+priceLogInc      1.0000     -0.1512     -0.1827      0.0484     -0.2098      0.0979      0.1019     -0.0424
+mu_range        -0.1512      1.0000      0.8587      0.0343      0.6200     -0.6091     -0.3298      0.1313
+sigma_range     -0.1827      0.8587      1.0000      0.0632      0.6006     -0.6459     -0.3449      0.1359
+mu_size          0.0484      0.0343      0.0632      1.0000     -0.1325     -0.2053     -0.1207     -0.1404
+sigma_size      -0.2098      0.6200      0.6006     -0.1325      1.0000     -0.7147     -0.3661      0.1685
+sigma_ev         0.0979     -0.6091     -0.6459     -0.2053     -0.7147      1.0000      0.3761     -0.1856
+truck            0.1019     -0.3298     -0.3449     -0.1207     -0.3661      0.3761      1.0000      0.0184
+suv             -0.0424      0.1313      0.1359     -0.1404      0.1685     -0.1856      0.0184      1.0000
+sportcar        -0.0390      0.1379      0.1367     -0.1490      0.1688     -0.1903      0.0225      0.7307
+van              0.0274     -0.1133     -0.1035     -0.0860     -0.1540      0.1308      0.2043      0.0000
+               sportcar         van
+priceLogInc     -0.0390      0.0274
+mu_range         0.1379     -0.1133
+sigma_range      0.1367     -0.1035
+mu_size         -0.1490     -0.0860
+sigma_size       0.1688     -0.1540
+sigma_ev        -0.1903      0.1308
+truck            0.0225      0.2043
+suv              0.7307      0.0000
+sportcar         1.0000      0.0009
+van              0.0009      1.0000
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+  166          0.01904263
+ 3727          0.02192025
+  569          0.02323608
+ 3409          0.02977123
+ 3223          0.03237861
+ 1480          0.03411776
+ 3034          0.03617681
+ 4403          0.03691354
+ 4225          0.03745505
+ 2376          0.03760683
+ 2747          0.03761780
+ 2280          0.03837482
+  670          0.03874724
+ 4176          0.04171744
+ 3428          0.04260072
+  519          0.04465709
+  363          0.04556160
+ 1844          0.04615747
+ 1447          0.04652844
+ 1187          0.04685543
+
+Changes in parameter estimates from starting values:
+            Initial Estimate Difference
+priceLogInc -0.2447  -0.2727    -0.0280
+mu_range     0.0048   0.0056     0.0008
+sigma_range  0.0042   0.0070     0.0028
+mu_size      1.7396   1.7395    -0.0001
+sigma_size  10.5604  11.7789     1.2185
+sigma_ev    -2.5431  -3.6376    -1.0945
+sigma_large  0.0000   0.0000     0.0000
+truck       -1.3051  -0.8522     0.4529
+suv          0.8492   0.9823     0.1331
+sportcar     0.6362   0.8018     0.1656
+van         -1.1006  -0.5805     0.5201

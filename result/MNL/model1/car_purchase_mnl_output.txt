@@ -1,0 +1,83 @@
+Model run using Apollo for R, version 0.1.0 
+www.ApolloChoiceModelling.com
+
+Model name                       : car_purchase_mnl
+Model description                : Standard logit model on Train's car purchase data
+Model run at                     : 2021-01-02 21:37:36
+Estimation method                : bfgs
+Model diagnosis                  : successful convergence 
+Number of individuals            : 4654
+Number of observations           : 4654
+
+Number of cores used             :  7 
+Model without mixing
+
+LL(start)                        : -8313.11
+LL(0)                            : -8338.849
+LL(final)                        : -8312.846
+Rho-square (0)                   :  0.0031 
+Adj.Rho-square (0)               :  0.003 
+AIC                              :  16627.69 
+BIC                              :  16634.14 
+Estimated parameters             :  1
+Time taken (hh:mm:ss)            :  00:00:13.3 
+Iterations                       :  5 
+Min abs eigenvalue of hessian    :  20532.75 
+
+Estimates:
+     Estimate Std.err. t.ratio(0) Rob.std.err. Rob.t.ratio(0)
+cost  -0.0501    0.007      -7.18       0.0071          -7.08
+
+Overview of choices for model component "MNL"
+                                    car1    car2   car3   car4    car5    car6
+Times available                  4654.00 4654.00 4654.0 4654.0 4654.00 4654.00
+Times chosen                      887.00  269.00 1345.0  349.0 1499.00  305.00
+Percentage chosen overall          19.06    5.78   28.9    7.5   32.21    6.55
+Percentage chosen when available   19.06    5.78   28.9    7.5   32.21    6.55
+
+WARNING: Availability not provided to 'apollo_mnl' (or some elements are NA).
+         Full availability assumed.
+
+
+Classical covariance matrix:
+     cost
+cost    0
+
+Robust covariance matrix:
+      cost
+cost 1e-04
+
+Classical correlation matrix:
+     cost
+cost    1
+
+Robust correlation matrix:
+     cost
+cost    1
+
+ 20 worst outliers in terms of lowest average per choice prediction:
+  row Avg prob per choice
+   19           0.1325836
+   36           0.1325836
+  141           0.1325836
+  409           0.1325836
+  683           0.1325836
+  685           0.1325836
+  725           0.1325836
+  856           0.1325836
+  980           0.1325836
+ 1190           0.1325836
+ 1242           0.1325836
+ 1267           0.1325836
+ 1422           0.1325836
+ 1625           0.1325836
+ 1748           0.1325836
+ 1877           0.1325836
+ 1986           0.1325836
+ 2139           0.1325836
+ 2160           0.1325836
+ 2432           0.1325836
+
+Changes in parameter estimates from starting values:
+     Initial Estimate Difference
+cost -0.0552  -0.0501     0.0051
